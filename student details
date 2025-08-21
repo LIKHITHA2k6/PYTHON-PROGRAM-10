@@ -1,0 +1,32 @@
+class student:
+def__init__(self,name,usn):
+ self.name = name
+ self.usn = usn
+ self.marks = [0,0,0]
+ self.total = 0
+ self.percentage = 0.0
+
+ def getmarks(self):
+ for i in range(3):
+ self.marks[i] = float(input(f"Enter marks for subject{i+1}:"))
+
+ def calculate (self):
+ self.total = sum(self.marks)
+ self.percentage = self.total/3
+ #assuming each subjects is out of 100
+
+ def display(self):
+ print("\n score card details")
+ print("")
+ print("usn;",self.usn)
+ print("marks in subject:",self marks)
+ print("total marks:"self.total)
+ print("percentage :",self.percentage)
+
+ name = input ("Enter the student's name:")
+ usn = input ("Enter the students usn:")
+
+ s = student(name,usn)
+ s.get marks()
+ s.calculate()
+ s.display()
